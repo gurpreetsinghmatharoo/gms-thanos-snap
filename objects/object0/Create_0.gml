@@ -1,4 +1,9 @@
 /// @description 
+//
+// CHECK VARIABLE DEFITIONS WINDOW
+//
+
+// Debug overlay
 show_debug_overlay(1)
 
 // Shader Uniforms

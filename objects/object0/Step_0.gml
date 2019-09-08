@@ -4,35 +4,41 @@ if (keyboard_check_pressed(ord("R"))) {
 	room_restart();
 }
 
-// Start
+// Start animation with S
 if (!animStart && keyboard_check_pressed(ord("S"))) {
 	animStart = true;
 }
 
 
-// Animation
+// Animation started
 if (animStart) {
-	// Value
+	// Animation progress value
 	if (animVal < 1) animVal += animSpeed;
 	else animVal = 1;
 
-	// Create particles
+	// Create particles, if interval met
 	if (animVal - animPartLast > animPartInterval) {
+		// Get top-left coordinate of instance
 		var _xBase = x - sprite_get_xoffset(sprite_index);
 		var _yBase = y - sprite_get_yoffset(sprite_index);
-	
-		var _iMargin = 0;
-		var _incr = 0.02;
+		
+		// Vars
+		var _iMargin = 0; // Margins for diagonal line
+		var _incr = 0.02; // Distance between each point on the diagonal line
 
+		// Animation value where particles should be created
 		var _endVal = clamp(animVal - animSpread, 0, 1) * 2;
-	
+		
+		// Set margin if animation is more than halfway through
 		if (_endVal >= 1) _iMargin = (_endVal - 1) / 2;
-
+		
+		// Run loop for diagonal line
 		for (var i=_iMargin; i<1 - _iMargin; i+=_incr) {
-			// Relative position (0-1)
+			// Get relative position (0-1)
 			var _xRel = _endVal * i;
 			var _yRel = _endVal * (1 - i);
-		
+			
+			// Clamp
 			_xRel = clamp(_xRel, 0, 0.99);
 			_yRel = clamp(_yRel, 0, 0.99);
 		
@@ -53,10 +59,11 @@ if (animStart) {
 			//_x += pattern[floor(patternW * _xRel)] * _off;
 			//_y += pattern[floor(patternH * _yRel)] * _off;
 	
-			// Create
+			// Create particle
 			part_particles_create(partSys, _x, _y, partDust, 1);
 		}
 		
+		// Set last anim time
 		animPartLast = animVal;
 	}
 }
