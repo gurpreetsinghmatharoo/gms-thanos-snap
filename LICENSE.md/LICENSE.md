@@ -1,20 +1,21 @@
-Personal Use License
+MIT License
 
-The content owner grants the buyer a non-exclusive, perpetual, personal use
-license to view, download, display, and copy the content, subject to the
-following restrictions:
+Copyright (c) 2019 Gurpreet Singh Matharoo
 
-The content is licensed for personal use only, not commercial use. The
-content may not be used in any way whatsoever in which you charge money,
-collect fees, or receive any form of remuneration. The content may not be
-resold, relicensed, sub-licensed, rented, leased, or used in advertising.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Title and ownership, and all rights now and in the future, of and for the
-content remain exclusively with the content owner.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-There are no warranties, express or implied. The content is provided 'as
-is.'
-
-Neither the content owner, payment processing service, nor hosting service
-will be liable for any third party claims or incidental, consequential, or
-other damages arising out of this license or the buyer's use of the content.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
